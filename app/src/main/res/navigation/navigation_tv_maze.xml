@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_tv_maze"
+    app:startDestination="@id/tvMazeListFragment">
+
+    <fragment
+        android:id="@+id/tvMazeListFragment"
+        android:name="com.tvMaze.android.tvmazeapp.view.TvMazeListFragment"
+        android:label="Browse TV Shows"
+        tools:layout="@layout/fragment_tv_maze_list">
+        <action
+            android:id="@+id/action_tvMazeListFragment_to_tvMazeDetailFragment"
+            app:destination="@id/tvMazeDetailFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvMazeDetailFragment"
+        android:name="com.tvMaze.android.tvmazeapp.view.TvMazeDetailFragment"
+        android:label="Tv Show Details"
+        tools:layout="@layout/fragment_tv_maze_detail">
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recyclerview_margin">16dp</dimen>
+    <dimen name="show_image_margin">14dp</dimen>
+    <dimen name="recyclerview_height">0dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_large">200dp</dimen>
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_extra_large">32sp</dimen>
+    <dimen name="margin_extra_large">400dp</dimen>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="dimen_7dp">7dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+</resources>
